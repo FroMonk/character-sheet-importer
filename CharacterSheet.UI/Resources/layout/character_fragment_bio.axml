@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2">
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="201dp"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="@string/bio_name"
+      android:contentDescription="@string/content_description_bio_name_label"
+      app:widthScale="0.2"
+      app:marginRightScale="0.005"/>
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/bioName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      app:dynamicContentDescription="@string/content_description_bio_name" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="201dp"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="@string/bio_class"
+      android:contentDescription="@string/content_description_bio_class_label"
+      app:widthScale="0.2" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/bioClass"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      app:dynamicContentDescription="@string/content_description_bio_class" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="201dp"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="@string/bio_level"
+      android:contentDescription="@string/content_description_bio_level_label"
+      app:widthScale="0.2" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/bioLevel"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      app:dynamicContentDescription="@string/content_description_bio_level" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="201dp"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="@string/bio_experience"
+      android:contentDescription="@string/content_description_bio_experience_label"
+      app:widthScale="0.2" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/bioExperience"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      app:dynamicContentDescription="@string/content_description_bio_experience" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="201dp"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="@string/bio_senses"
+      android:contentDescription="@string/content_description_bio_senses_label"
+      app:widthScale="0.2" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/bioSenses"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      app:dynamicContentDescription="@string/content_description_bio_senses" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="201dp"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="@string/bio_alignment_deity"
+      android:contentDescription="@string/content_description_bio_alignment_deity_label"
+      app:widthScale="0.2" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/bioAlignmentDeity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      app:dynamicContentDescription="@string/content_description_bio_alignment_deity" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="201dp"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="@string/bio_race_age_gender"
+      android:contentDescription="@string/content_description_bio_race_age_gender_label"
+      app:widthScale="0.2" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/bioRaceAgeGender"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      app:dynamicContentDescription="@string/content_description_bio_race_age_gender" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="201dp"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="@string/bio_size_face_height_weight"
+      android:contentDescription="@string/content_description_bio_size_height_weight_label"
+      app:widthScale="0.2" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/bioSizeFaceHeight"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      app:dynamicContentDescription="@string/content_description_bio_size_height_weight" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="201dp"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="@string/bio_eyes_hair"
+      android:contentDescription="@string/content_description_bio_eyes_hair_label"
+      app:widthScale="0.2" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/bioEyesHair"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      app:dynamicContentDescription="@string/content_description_bio_eyes_hair" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="201dp"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="@string/bio_money"
+      android:contentDescription="@string/content_description_bio_money_label"
+      app:widthScale="0.2" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/bioMoney"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      app:dynamicContentDescription="@string/content_description_bio_money" />
+</GridLayout>

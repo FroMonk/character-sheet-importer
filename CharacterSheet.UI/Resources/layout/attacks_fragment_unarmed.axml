@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@android:color/black"
+  android:columnCount="5">
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="100dp"
+      android:layout_height="match_parent"
+      android:text="@string/attacks_attack_name_label"
+      android:contentDescription="@string/content_description_ability_score_label"
+      android:background="@android:color/black"
+      android:textColor="@android:color/white"
+      android:paddingLeft="2dp"
+      app:baseTextSize="12"
+      app:widthScale="0.4075"/>
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="100dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/attacks_attack_unarmed_total_attack_bonus_label"
+      android:contentDescription="@string/content_description_ability_modifier_label"
+      android:background="@android:color/black"
+      android:textColor="@android:color/white"
+      app:baseTextSize="12"
+      app:widthScale="0.135" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="100dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/attacks_attack_damage_label"
+      android:contentDescription="@string/content_description_ability_modifier_label"
+      android:background="@android:color/black"
+      android:textColor="@android:color/white"
+      app:baseTextSize="12"
+      app:widthScale="0.1" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="100dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/attacks_attack_critical_label"
+      android:contentDescription="@string/content_description_ability_modifier_label"
+      android:background="@android:color/black"
+      android:textColor="@android:color/white"
+      app:baseTextSize="12"
+      app:widthScale="0.1" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="100dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/attacks_attack_reach_label"
+      android:contentDescription="@string/content_description_ability_modifier_label"
+      android:background="@android:color/black"
+      android:textColor="@android:color/white"
+      app:baseTextSize="12"
+      app:widthScale="0.1" />  
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/attacks_attack_unarmed_name"
+      android:layout_width="100dp"
+      android:layout_height="36dp"
+      android:gravity="center_vertical"
+      android:contentDescription="@string/content_description_ability_score_label"
+      android:background="@android:color/black"
+      android:textColor="@android:color/white"
+      android:paddingLeft="2dp"
+      app:baseTextSize="12"
+      app:widthScale="0.4075"
+      app:heightScale="0.03"
+      app:marginBottomScale="0.0025" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/attacks_attack_unarmed_bonus"
+      android:layout_width="100dp"
+      android:layout_height="36dp"
+      android:gravity="center"
+      android:contentDescription="@string/content_description_ability_score_label"
+      android:background="#33b5e5"
+      android:textColor="@android:color/white"
+      app:baseTextSize="12"
+      app:widthScale="0.135"
+      app:heightScale="0.03"/>
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/attacks_attack_unarmed_damage"
+      android:layout_width="100dp"
+      android:layout_height="36dp"
+      android:gravity="center"
+      android:contentDescription="@string/content_description_ability_modifier_label"
+      android:background="#FAFAFA"
+      app:baseTextSize="12"
+      app:widthScale="0.1"
+      app:heightScale="0.03"
+      app:marginLeftScale="0.0025" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/attacks_attack_unarmed_critical"
+      android:layout_width="100dp"
+      android:layout_height="36dp"
+      android:gravity="center"
+      android:contentDescription="@string/content_description_ability_modifier_label"
+      android:background="#FAFAFA"
+      app:baseTextSize="12"
+      app:widthScale="0.1"
+      app:heightScale="0.03"
+      app:marginLeftScale="0.0025" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/attacks_attack_unarmed_reach"
+      android:layout_width="100dp"
+      android:layout_height="36dp"
+      android:gravity="center"
+      android:contentDescription="@string/content_description_ability_modifier_label"
+      android:background="#FAFAFA"
+      app:baseTextSize="12"
+      app:widthScale="0.1"
+      app:heightScale="0.03"
+      app:marginLeftScale="0.0025" />
+</GridLayout>

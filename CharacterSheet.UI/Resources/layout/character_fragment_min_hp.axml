@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4" >
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="102dp"
+      android:layout_height="match_parent"
+      android:gravity="bottom|center_horizontal"
+      android:text="@string/hp_min_max"
+      android:contentDescription="@string/content_description_hp_label_max"
+      android:layout_column="1"
+      app:widthScale="0.1045"
+      app:marginRightScale="0.0025"
+      app:baseTextSize="12" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="102dp"
+      android:layout_height="match_parent"
+      android:gravity="bottom|center_horizontal"
+      android:text="@string/hp_wounds_current"
+      android:contentDescription="@string/content_description_hp_label_current"
+      app:widthScale="0.1045"
+      app:marginRightScale="0.0025"
+      app:baseTextSize="12" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="102dp"
+      android:layout_height="match_parent"
+      android:gravity="bottom|center_horizontal"
+      android:text="@string/hp_subdual_dam"
+      android:contentDescription="@string/content_description_hp_label_subdual_damage"
+      app:widthScale="0.1045"
+      app:marginRightScale="0.0025"
+      app:baseTextSize="12" />
+  <apps.dysfunctional.com.ScaledLinearLayout
+      android:layout_width="113dp"
+      android:layout_height="76dp"
+      android:background="@android:color/black"
+      android:orientation="vertical"
+      android:layout_row="1"
+      android:layout_column="0"
+      app:widthScale="0.075"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:marginBottomScale="0.0025">
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/hp_label1"
+        android:contentDescription="@string/content_description_hp_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="20" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/hp_label2"
+        android:contentDescription="@string/content_description_hp_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="10" />
+  </apps.dysfunctional.com.ScaledLinearLayout>
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/hpMax"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.1045"
+      app:heightScale="0.05"
+      app:dynamicContentDescription="@string/content_description_hp_max" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/hpWoundsCurrent"
+      android:layout_width="102dp"
+      android:layout_height="76dp"
+      android:background="@drawable/blueborder"
+      android:gravity="center"
+      app:widthScale="0.1045"
+      app:heightScale="0.05"
+      app:dynamicContentDescription="@string/content_description_hp_current" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/hpSubdualDamage"
+      android:layout_width="102dp"
+      android:layout_height="76dp"
+      android:background="@drawable/blueborder"
+      android:contentDescription="@string/content_description_hp_subdual_damage"
+      android:gravity="center"
+      app:widthScale="0.1045"
+      app:heightScale="0.05"
+      app:dynamicContentDescription="@string/content_description_hp_subdual_damage" />
+</GridLayout>

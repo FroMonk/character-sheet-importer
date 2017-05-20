@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<apps.dysfunctional.com.ScaledLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:marginBottomScale="0.005">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <!--Saving throws-->
+        <include
+            layout="@layout/character_fragment_savingthrows" />
+    <!-- End Saving throws -->
+        <apps.dysfunctional.com.ScaledView
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            app:widthScale="0.015" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <apps.dysfunctional.com.ScaledView
+                android:layout_width="match_parent"
+                android:layout_height="7.55dp"
+                app:heightScale="0.015" />
+            <apps.dysfunctional.com.ScaledTextView
+                android:id="@+id/savingThrowsConditionalSaveModifiers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"
+                android:padding="2dp"
+                android:text="@string/saving_throws_conditonal_save_title"
+                app:baseTextSize="12"
+                app:hasPrefixedText="true" />
+        </LinearLayout>
+    </LinearLayout>
+</apps.dysfunctional.com.ScaledLinearLayout>

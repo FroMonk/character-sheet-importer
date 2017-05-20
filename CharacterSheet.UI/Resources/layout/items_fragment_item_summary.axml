@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_summary_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <apps.dysfunctional.com.ScaledTextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:contentDescription="@string/content_description_ability_score_label"
+            app:baseTextSize="25" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+            <Button
+                android:id="@+id/item_summary_plus_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spacer_plus"
+                android:background="#33b5e5"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/item_summary_minus_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spacer_minus"
+                android:background="#33b5e5"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/item_summary_edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:background="#33b5e5"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <include
+        layout="@layout/items_fragment_item_summary_content" />
+</LinearLayout>

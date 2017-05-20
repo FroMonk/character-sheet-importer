@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="8" >
+  <apps.dysfunctional.com.ScaledLinearLayout
+      android:layout_width="113dp"
+      android:layout_height="76dp"
+      android:background="@android:color/black"
+      android:orientation="vertical"
+      app:widthScale="0.075"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025">
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/ac_label1"
+        android:contentDescription="@string/content_description_ac_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="20" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/ac_label2"
+        android:contentDescription="@string/content_description_ac_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="10" />
+  </apps.dysfunctional.com.ScaledLinearLayout>
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/acTotal"
+      android:layout_width="52dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.0725"
+      app:heightScale="0.05"
+      app:dynamicContentDescription="@string/content_description_ac_total" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="15dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_colon"
+      app:widthScale="0.01"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/acTouch"
+      android:layout_width="52dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.0725"
+      app:heightScale="0.05"
+      app:dynamicContentDescription="@string/content_description_ac_touch" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="15dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_colon"
+      app:widthScale="0.01"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/acFlat"
+      android:layout_width="52dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.0725"
+      app:heightScale="0.05"
+      app:dynamicContentDescription="@string/content_description_ac_flat" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="15dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_colon"
+      app:widthScale="0.01"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/acTemp"
+      android:layout_width="52dp"
+      android:layout_height="76dp"
+      android:background="@drawable/blueborder"
+      android:contentDescription="@string/content_description_ac_temp"
+      android:gravity="center"
+      app:isStatBlock="true"
+      app:widthScale="0.0725"
+      app:heightScale="0.05"
+      app:dynamicContentDescription="@string/content_description_ac_temp" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="52dp"
+      android:layout_height="match_parent"
+      android:gravity="top|center_horizontal"
+      android:text="@string/ac_total"
+      android:contentDescription="@string/content_description_ac_label_total"
+      android:layout_row="1"
+      android:layout_column="1"
+      app:widthScale="0.0725"
+      app:marginBottomScale="0.005"
+      app:baseTextSize="9" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="52dp"
+      android:layout_height="match_parent"
+      android:gravity="top|center_horizontal"
+      android:text="@string/ac_touch"
+      android:contentDescription="@string/content_description_ac_label_touch"
+      android:layout_column="3"
+      app:widthScale="0.0725"
+      app:baseTextSize="9" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="52dp"
+      android:layout_height="match_parent"
+      android:gravity="top|center_horizontal"
+      android:text="@string/ac_flat"
+      android:contentDescription="@string/content_description_ac_label_flat"
+      android:layout_column="5"
+      app:widthScale="0.0725"
+      app:baseTextSize="9" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="52dp"
+      android:layout_height="match_parent"
+      android:gravity="top|center_horizontal"
+      android:text="@string/ac_temp"
+      android:contentDescription="@string/content_description_ac_label_temp"
+      android:layout_column="7"
+      app:widthScale="0.0725"
+      app:baseTextSize="9" />
+</GridLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/googleDriveImageView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:src="@drawable/drive" />
+    <ImageView
+        android:id="@+id/dropboxImageView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:src="@drawable/dropbox" />
+    <ImageView
+        android:id="@+id/androidFolderImageView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:src="@drawable/local_device_storage" />
+  </LinearLayout>
+</ScrollView>

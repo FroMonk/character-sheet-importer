@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:padding="2dp">
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/skills_name"
+            android:textColor="@android:color/white"
+            android:gravity="bottom"
+            android:layout_weight="4.75" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/skills_ability"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="@android:color/white"
+            android:layout_weight="1.25" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.75" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/skills_skill_modifier"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="@android:color/white"
+            android:layout_weight="1.25" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/skills_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</LinearLayout>

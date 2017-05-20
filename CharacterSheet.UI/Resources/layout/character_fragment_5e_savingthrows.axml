@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="15">
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="60dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/saving_throws_name"
+      android:contentDescription="@string/content_description_saving_throws_name_label"
+      app:widthScale="0.135"
+      app:baseTextSize="10" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="60dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/saving_throws_total"
+      android:contentDescription="@string/content_description_saving_throws_total_label"
+      app:widthScale="0.04"
+      app:baseTextSize="10" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="60dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/saving_throws_base"
+      android:contentDescription="@string/content_description_saving_throws_base_label"
+      android:layout_column="3"
+      app:widthScale="0.04"
+      app:baseTextSize="10" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="60dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/saving_throws_ability"
+      android:contentDescription="@string/content_description_saving_throws_ability_label"
+      android:layout_column="5"
+      app:widthScale="0.04"
+      app:baseTextSize="10" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="60dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/saving_throws_magic"
+      android:contentDescription="@string/content_description_saving_throws_magic_label"
+      android:layout_column="7"
+      app:widthScale="0.04"
+      app:baseTextSize="10" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="60dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/saving_throws_epic"
+      android:contentDescription="@string/content_description_saving_throws_epic_label"
+      android:layout_column="9"
+      app:widthScale="0.04"
+      app:baseTextSize="10" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="60dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/saving_throws_misc"
+      android:contentDescription="@string/content_description_saving_throws_misc_label"
+      android:layout_column="11"
+      app:widthScale="0.04"
+      app:baseTextSize="10" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="60dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/saving_throws_temp"
+      android:contentDescription="@string/content_description_saving_throws_temp_label"
+      android:layout_column="13"
+      app:widthScale="0.04"
+      app:baseTextSize="10" />
+  <apps.dysfunctional.com.ScaledLinearLayout
+      android:layout_width="203dp"
+      android:layout_height="76dp"
+      android:background="@android:color/black"
+      android:orientation="vertical"
+      android:layout_row="1"
+      android:layout_column="0"
+      app:widthScale="0.135"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:marginBottomScale="0.0025">
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_strength_label"
+        android:contentDescription="@string/content_description_saving_throws_strength_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="18" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/savingThrowsStrengthProficient"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_proficient_label"
+        android:contentDescription="@string/content_description_saving_throws_strength_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="10" />
+  </apps.dysfunctional.com.ScaledLinearLayout>
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsStrengthTotal"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_strength_total" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_equals"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsStrengthBase"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_strength_base" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsStrengthAbility"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_strength_ability" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsStrengthMagic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_strength_magic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsStrengthEpic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_strength_epic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsStrengthMisc"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_strength_misc" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsStrengthTemp"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/blueborder"
+      android:gravity="center"
+      app:isStatBlock="true"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:dynamicContentDescription="@string/content_description_saving_throws_strength_temp" />
+  <apps.dysfunctional.com.ScaledImageButton
+      android:id="@+id/savingThrowsStrengthRoll"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:background="@drawable/die"
+      app:widthScale="0.05"
+      app:heightScale="0.05"
+      android:contentDescription="@string/content_description_saving_throws_strength_roll" />
+  <apps.dysfunctional.com.ScaledLinearLayout
+      android:layout_width="203dp"
+      android:layout_height="76dp"
+      android:background="@android:color/black"
+      android:orientation="vertical"
+      app:widthScale="0.135"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:marginBottomScale="0.0025" >
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_dexterity_label"
+        android:contentDescription="@string/content_description_saving_throws_dexterity_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="18" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/savingThrowsDexterityProficient"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_proficient_label"
+        android:contentDescription="@string/content_description_saving_throws_dexterity_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="10" />
+  </apps.dysfunctional.com.ScaledLinearLayout>
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsDexterityTotal"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_dexterity_total" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_equals"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsDexterityBase"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_dexterity_base" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsDexterityAbility"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_dexterity_base" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsDexterityMagic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_dexterity_magic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsDexterityEpic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_dexterity_epic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsDexterityMisc"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_dexterity_misc" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsDexterityTemp"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/blueborder"
+      android:gravity="center"
+      app:isStatBlock="true"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:dynamicContentDescription="@string/content_description_saving_throws_dexterity_temp" />
+  <apps.dysfunctional.com.ScaledImageButton
+      android:id="@+id/savingThrowsDexterityRoll"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:background="@drawable/die"
+      app:widthScale="0.05"
+      app:heightScale="0.05"
+      android:contentDescription="@string/content_description_saving_throws_dexterity_roll" />
+  <apps.dysfunctional.com.ScaledLinearLayout
+      android:layout_width="203dp"
+      android:layout_height="76dp"
+      android:background="@android:color/black"
+      android:orientation="vertical"
+      app:widthScale="0.135"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:marginBottomScale="0.0025">
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_constitution_label"
+        android:contentDescription="@string/content_description_saving_throws_constitution_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="18" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/savingThrowsConstitutionProficient"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_proficient_label"
+        android:contentDescription="@string/content_description_saving_throws_constitution_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="10" />
+  </apps.dysfunctional.com.ScaledLinearLayout>
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsConstitutionTotal"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_constitution_total" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_equals"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsConstitutionBase"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_constitution_base" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsConstitutionAbility"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_constitution_ability" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsConstitutionMagic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_constitution_magic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsConstitutionEpic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_constitution_epic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsConstitutionMisc"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_constitution_misc" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsConstitutionTemp"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/blueborder"
+      android:gravity="center"
+      app:isStatBlock="true"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:dynamicContentDescription="@string/content_description_saving_throws_constitution_temp" />
+  <apps.dysfunctional.com.ScaledImageButton
+      android:id="@+id/savingThrowsConstitutionRoll"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:background="@drawable/die"
+      app:widthScale="0.05"
+      app:heightScale="0.05"
+      android:contentDescription="@string/content_description_saving_throws_constitution_roll" />
+  <apps.dysfunctional.com.ScaledLinearLayout
+      android:layout_width="203dp"
+      android:layout_height="76dp"
+      android:background="@android:color/black"
+      android:orientation="vertical"
+      app:widthScale="0.135"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:marginBottomScale="0.0025">
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_intelligence_label"
+        android:contentDescription="@string/content_description_saving_throws_intelligence_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="18" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/savingThrowsIntelligenceProficient"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_proficient_label"
+        android:contentDescription="@string/content_description_saving_throws_intelligence_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="10" />
+  </apps.dysfunctional.com.ScaledLinearLayout>
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsIntelligenceTotal"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_intelligence_total" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_equals"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsIntelligenceBase"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_intelligence_base" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsIntelligenceAbility"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_intelligence_ability" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsIntelligenceMagic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_intelligence_magic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsIntelligenceEpic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_intelligence_epic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsIntelligenceMisc"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_intelligence_misc" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsIntelligenceTemp"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/blueborder"
+      android:gravity="center"
+      app:isStatBlock="true"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:dynamicContentDescription="@string/content_description_saving_throws_intelligence_temp" />
+  <apps.dysfunctional.com.ScaledImageButton
+      android:id="@+id/savingThrowsIntelligenceRoll"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:background="@drawable/die"
+      app:widthScale="0.05"
+      app:heightScale="0.05"
+      android:contentDescription="@string/content_description_saving_throws_intelligence_roll" />
+  <apps.dysfunctional.com.ScaledLinearLayout
+      android:layout_width="203dp"
+      android:layout_height="76dp"
+      android:background="@android:color/black"
+      android:orientation="vertical"
+      app:widthScale="0.135"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:marginBottomScale="0.0025" >
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_wisdom_label"
+        android:contentDescription="@string/content_description_saving_throws_wisdom_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="18" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/savingThrowsWisdomProficient"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_proficient_label"
+        android:contentDescription="@string/content_description_saving_throws_wisdom_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="10" />
+  </apps.dysfunctional.com.ScaledLinearLayout>
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsWisdomTotal"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_wisdom_total" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_equals"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsWisdomBase"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_wisdom_base" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsWisdomAbility"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_wisdom_base" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsWisdomMagic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_wisdom_magic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsWisdomEpic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_wisdom_epic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsWisdomMisc"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_wisdom_misc" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsWisdomTemp"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/blueborder"
+      android:gravity="center"
+      app:isStatBlock="true"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:dynamicContentDescription="@string/content_description_saving_throws_wisdom_temp" />
+  <apps.dysfunctional.com.ScaledImageButton
+      android:id="@+id/savingThrowsWisdomRoll"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:background="@drawable/die"
+      app:widthScale="0.05"
+      app:heightScale="0.05"
+      android:contentDescription="@string/content_description_saving_throws_wisdom_roll" />
+  <apps.dysfunctional.com.ScaledLinearLayout
+      android:layout_width="203dp"
+      android:layout_height="76dp"
+      android:background="@android:color/black"
+      android:orientation="vertical"
+      app:widthScale="0.135"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025">
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_charisma_label"
+        android:contentDescription="@string/content_description_saving_throws_charisma_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="18" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/savingThrowsCharismaProficient"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/saving_throws_proficient_label"
+        android:contentDescription="@string/content_description_saving_throws_charisma_label"
+        android:textColor="@android:color/white"
+        app:heightScale="0.025"
+        app:baseTextSize="10" />
+  </apps.dysfunctional.com.ScaledLinearLayout>
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsCharismaTotal"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_charisma_total" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_equals"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsCharismaBase"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_charisma_base" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsCharismaAbility"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_charisma_ability" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsCharismaMagic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_charisma_magic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsCharismaEpic"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_charisma_epic" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsCharismaMisc"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:isStatBlock="true"
+      app:dynamicContentDescription="@string/content_description_saving_throws_charisma_misc" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="76dp"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015"
+      app:heightScale="0.05" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/savingThrowsCharismaTemp"
+      android:layout_width="60dp"
+      android:layout_height="76dp"
+      android:background="@drawable/blueborder"
+      android:gravity="center"
+      app:isStatBlock="true"
+      app:widthScale="0.04"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:dynamicContentDescription="@string/content_description_saving_throws_charisma_temp" />
+  <apps.dysfunctional.com.ScaledImageButton
+      android:id="@+id/savingThrowsCharismaRoll"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:background="@drawable/die"
+      app:widthScale="0.05"
+      app:heightScale="0.05"
+      android:contentDescription="@string/content_description_saving_throws_charisma_roll" />  
+</GridLayout>

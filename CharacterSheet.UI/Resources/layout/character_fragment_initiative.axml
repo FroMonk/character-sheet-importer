@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="7">
+        <apps.dysfunctional.com.ScaledLinearLayout
+            android:layout_width="188dp"
+            android:layout_height="76dp"
+            android:background="@android:color/black"
+            android:orientation="vertical"
+            app:widthScale="0.125"
+            app:heightScale="0.05"
+            app:marginRightScale="0.0025">
+            <apps.dysfunctional.com.ScaledTextView
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="@string/initiative_label1"
+                android:contentDescription="@string/content_description_initiative_label"
+                android:textColor="@android:color/white"
+                app:heightScale="0.025"
+                app:baseTextSize="20" />
+            <apps.dysfunctional.com.ScaledTextView
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="@string/initiative_label2"
+                android:contentDescription="@string/content_description_initiative_label"
+                android:textColor="@android:color/white"
+                app:heightScale="0.025"
+                app:baseTextSize="10" />
+        </apps.dysfunctional.com.ScaledLinearLayout>
+        <apps.dysfunctional.com.ScaledTextView
+            android:id="@+id/initiativeTotal"
+            android:layout_width="60dp"
+            android:layout_height="38dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            app:widthScale="0.04"
+            app:heightScale="0.05"
+            app:isStatBlock="true"
+            app:dynamicContentDescription="@string/content_description_initiative_total" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="16dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/spacer_equals"
+            android:textColor="@android:color/black"
+            app:widthScale="0.011"
+            app:heightScale="0.05" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:id="@+id/initiativeDex"
+            android:layout_width="60dp"
+            android:layout_height="38dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            app:widthScale="0.04"
+            app:heightScale="0.05"
+            app:isStatBlock="true"
+            app:dynamicContentDescription="@string/content_description_initiative_dex" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="16dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/spacer_plus"
+            app:widthScale="0.011"
+            app:heightScale="0.05" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:id="@+id/initiativeMisc"
+            android:layout_width="60dp"
+            android:layout_height="38dp"
+            android:background="@drawable/back"
+            android:gravity="center"
+            app:widthScale="0.04"
+            app:heightScale="0.05"
+            app:marginRightScale="0.0025"
+            app:isStatBlock="true"
+            app:dynamicContentDescription="@string/content_description_initiative_misc" />
+        <apps.dysfunctional.com.ScaledImageButton
+            android:id="@+id/initiativeRoll"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/die"
+            android:contentDescription="@string/content_description_initiative_roll"
+            app:widthScale="0.05"
+            app:heightScale="0.05" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/initiative_total"
+            android:contentDescription="@string/content_description_initiative_total_label"
+            android:layout_row="1"
+            android:layout_column="1"
+            app:widthScale="0.04"
+            app:baseTextSize="10" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/initiative_dex"
+            android:contentDescription="@string/content_description_initiative_dex_label"
+            android:layout_column="3"
+            app:widthScale="0.04"
+            app:baseTextSize="10" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/initiative_misc"
+            android:contentDescription="@string/content_description_initiative_misc_label"
+            android:layout_column="5"
+            app:widthScale="0.04"
+            app:baseTextSize="10" />
+    </GridLayout>
+  </LinearLayout>
+</merge>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/description_dialog_spell_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="2dp">
+      <include layout="@layout/spells_fragment_min_spell_summary" />
+    </ScrollView>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+    <Button
+        android:id="@+id/spell_summary_prepare_plus_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/spacer_plus"
+        android:background="#33b5e5"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/spell_summary_prepare_minus_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/spacer_minus"
+        android:background="#33b5e5"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/spell_summary_cast_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/cast"
+        android:background="#33b5e5"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/description_spell_close_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/close"
+        android:layout_below="@+id/description_dialog_spell_container"
+        android:background="#33b5e5"
+        android:textColor="@android:color/white" />
+  </LinearLayout>
+</LinearLayout>

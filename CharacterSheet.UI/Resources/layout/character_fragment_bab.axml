@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<apps.dysfunctional.com.ScaledLinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center_horizontal"
+  android:orientation="horizontal">
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="604dp"
+      android:layout_height="76dp"
+      android:background="@android:color/black"
+      android:gravity="center"
+      android:text="@string/bab_label"
+      android:contentDescription="@string/content_description_attack_bonuses_bab_label"
+      android:textColor="@android:color/white"
+      app:widthScale="0.4"
+      app:heightScale="0.05"
+      app:marginRightScale="0.0025"
+      app:baseTextSize="20" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/attacksBabTotal"
+      android:layout_width="264dp"
+      android:layout_height="match_parent"
+      android:background="@drawable/back"
+      android:gravity="center"
+      app:widthScale="0.175"
+      app:dynamicContentDescription="@string/content_description_attack_bonuses_bab_total" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:layout_width="22dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/spacer_plus"
+      app:widthScale="0.015" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/attacksBabTemp"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/blueborder"
+        android:gravity="center"
+        app:isStatBlock="true"
+        app:widthScale="0.04"
+        app:marginRightScale="0.0025"
+        app:dynamicContentDescription="@string/content_description_attack_bonuses_bab_temp" />
+  <apps.dysfunctional.com.ScaledImageButton
+      android:id="@+id/babRoll"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:background="@drawable/die"
+      android:contentDescription="@string/content_description_attack_bonuses_bab_roll"
+      app:widthScale="0.05"
+      app:heightScale="0.05" />
+</apps.dysfunctional.com.ScaledLinearLayout>

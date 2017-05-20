@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="46"
+    android:columnCount="6">
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/ability_score"
+        android:contentDescription="@string/content_description_ability_score_label"
+        android:layout_column="1"
+        app:widthScale="0.05"
+        app:baseTextSize="12"
+        app:marginRightScale="0.0025" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/ability_modifier"
+        android:contentDescription="@string/content_description_ability_modifier_label"
+        app:widthScale="0.05"
+        app:baseTextSize="12"
+        app:marginRightScale="0.0025" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="113dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/ability_temp_score"
+        android:contentDescription="@string/content_description_ability_temp_score_label"
+        app:widthScale="0.075"
+        app:baseTextSize="12"
+        app:marginRightScale="0.0025" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:layout_width="113dp"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/ability_temp_modifier"
+        android:contentDescription="@string/content_description_ability_temp_modifier_label"
+        app:widthScale="0.075"
+        app:baseTextSize="12"
+        app:marginRightScale="0.0025" />
+    <apps.dysfunctional.com.ScaledLinearLayout
+        android:layout_width="113dp"
+        android:layout_height="76dp"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:layout_row="1"
+        android:layout_column="0"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:marginBottomScale="0.0025"
+        app:marginRightScale="0.0025">
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_str_label1"
+            android:contentDescription="@string/content_description_ability_str_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="20" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_str_label2"
+            android:contentDescription="@string/content_description_ability_str_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="10" />
+    </apps.dysfunctional.com.ScaledLinearLayout>
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityStrScore"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_str_ability_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityStrModifier"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_str_ability_modifier" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityStrTempScore"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/blueborder"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_str_temp_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityStrTempModifier"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_str_temp_modifier" />
+    <apps.dysfunctional.com.ScaledImageButton
+        android:id="@+id/abilityStrRoll"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/die"
+        android:contentDescription="@string/content_description_ability_str_roll"
+        app:widthScale="0.05"
+        app:heightScale="0.05" />
+    <apps.dysfunctional.com.ScaledLinearLayout
+        android:layout_width="113dp"
+        android:layout_height="76dp"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:marginBottomScale="0.0025">
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_dex_label1"
+            android:contentDescription="@string/content_description_ability_dex_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="20" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_dex_label2"
+            android:contentDescription="@string/content_description_ability_dex_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="10" />
+    </apps.dysfunctional.com.ScaledLinearLayout>
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityDexScore"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_dex_ability_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityDexModifier"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_dex_ability_modifier" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityDexTempScore"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/blueborder"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_dex_temp_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityDexTempModifier"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_dex_temp_modifier" />
+    <apps.dysfunctional.com.ScaledImageButton
+        android:id="@+id/abilityDexRoll"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/die"
+        android:contentDescription="@string/content_description_ability_dex_roll"
+        app:widthScale="0.05"
+        app:heightScale="0.05" />
+    <apps.dysfunctional.com.ScaledLinearLayout
+        android:layout_width="113dp"
+        android:layout_height="76dp"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:marginBottomScale="0.0025">
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_con_label1"
+            android:contentDescription="@string/content_description_ability_con_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="20" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_con_label2"
+            android:contentDescription="@string/content_description_ability_con_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="10" />
+    </apps.dysfunctional.com.ScaledLinearLayout>
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityConScore"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_con_ability_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityConModifier"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_con_ability_modifier" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityConTempScore"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/blueborder"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_con_temp_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityConTempModifier"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_con_temp_modifier" />
+    <apps.dysfunctional.com.ScaledImageButton
+        android:id="@+id/abilityConRoll"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/die"
+        android:contentDescription="@string/content_description_ability_con_roll"
+        app:widthScale="0.05"
+        app:heightScale="0.05" />
+    <apps.dysfunctional.com.ScaledLinearLayout
+        android:layout_width="113dp"
+        android:layout_height="76dp"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:marginBottomScale="0.0025">
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_int_label1"
+            android:contentDescription="@string/content_description_ability_int_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="20" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_int_label2"
+            android:contentDescription="@string/content_description_ability_int_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="10" />
+    </apps.dysfunctional.com.ScaledLinearLayout>
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityIntScore"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_int_ability_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityIntModifier"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_int_ability_modifier" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityIntTempScore"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/blueborder"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_int_temp_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityIntTempModifier"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_int_temp_modifier" />
+    <apps.dysfunctional.com.ScaledImageButton
+        android:id="@+id/abilityIntRoll"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/die"
+        android:contentDescription="@string/content_description_ability_int_roll"
+        app:widthScale="0.05"
+        app:heightScale="0.05" />
+    <apps.dysfunctional.com.ScaledLinearLayout
+        android:layout_width="113dp"
+        android:layout_height="76dp"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:marginBottomScale="0.0025">
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_wis_label1"
+            android:contentDescription="@string/content_description_ability_wis_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="20" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_wis_label2"
+            android:contentDescription="@string/content_description_ability_wis_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="10" />
+    </apps.dysfunctional.com.ScaledLinearLayout>
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityWisScore"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_wis_ability_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityWisModifier"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_wis_ability_modifier" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityWisTempScore"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/blueborder"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_wis_temp_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityWisTempModifier"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_wis_temp_modifier" />
+    <apps.dysfunctional.com.ScaledImageButton
+        android:id="@+id/abilityWisRoll"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/die"
+        android:contentDescription="@string/content_description_ability_wis_roll"
+        app:widthScale="0.05"
+        app:heightScale="0.05" />
+    <apps.dysfunctional.com.ScaledLinearLayout
+        android:layout_width="113dp"
+        android:layout_height="76dp"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        app:widthScale="0.075"
+        app:heightScale="0.05">
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_cha_label1"
+            android:contentDescription="@string/content_description_ability_cha_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="20" />
+        <apps.dysfunctional.com.ScaledTextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/ability_cha_label2"
+            android:contentDescription="@string/content_description_ability_cha_label"
+            android:textColor="@android:color/white"
+            app:heightScale="0.025"
+            app:baseTextSize="10" />
+    </apps.dysfunctional.com.ScaledLinearLayout>
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityChaScore"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_cha_ability_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityChaModifier"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.05"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_cha_ability_modifier" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityChaTempScore"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/blueborder"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:dynamicContentDescription="@string/content_description_ability_cha_temp_score" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/abilityChaTempModifier"
+        android:layout_width="113dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:widthScale="0.075"
+        app:heightScale="0.05"
+        app:isStatBlock="true"
+        app:dynamicContentDescription="@string/content_description_ability_cha_temp_modifier" />
+    <apps.dysfunctional.com.ScaledImageButton
+        android:id="@+id/abilityChaRoll"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/die"
+        android:contentDescription="@string/content_description_ability_cha_roll"
+        app:widthScale="0.05"
+        app:heightScale="0.05" />
+</GridLayout>

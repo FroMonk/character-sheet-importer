@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/item_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description_ability_score_label"
+        app:baseTextSize="12"
+        app:dynamicText="@string/item_qty" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/item_unit_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description_ability_score_label"
+        app:baseTextSize="12"
+        app:dynamicText="@string/item_unit_weight" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/item_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description_ability_score_label"
+        app:baseTextSize="12"
+        app:dynamicText="@string/item_weight" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/item_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description_ability_score_label"
+        app:baseTextSize="12"
+        app:dynamicText="@string/item_cost" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/item_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description_ability_score_label"
+        app:baseTextSize="12"
+        app:dynamicText="@string/item_location" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description_ability_score_label"
+        app:baseTextSize="12"
+        app:dynamicText="@string/item_description" />
+</merge>

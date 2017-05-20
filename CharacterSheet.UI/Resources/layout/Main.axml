@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+  <android.support.v4.widget.DrawerLayout
+      android:id="@+id/drawer_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- The Left Navigation Drawer -->
+    <ExpandableListView
+        android:id="@+id/characters_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#818181"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        android:background="#FAFAFA" />
+    <ListView
+        android:id="@+id/tabs_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:choiceMode="singleChoice"
+        android:divider="#818181"
+        android:dividerHeight="1dp"
+        android:background="#FAFAFA" />
+  </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

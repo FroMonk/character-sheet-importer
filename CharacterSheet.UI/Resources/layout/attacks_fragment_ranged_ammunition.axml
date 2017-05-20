@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <apps.dysfunctional.com.ScaledTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/attacks_attack_ranged_ammunition"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:textColor="#33b5e5"
+    android:background="#FAFAFA"
+    android:paddingLeft="2dp"    
+    app:baseTextSize="20"
+    app:widthScale="0.6225"/>

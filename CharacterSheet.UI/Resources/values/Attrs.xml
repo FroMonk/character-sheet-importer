@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <declare-styleable name="ScaledTextView">
+    <attr name="widthScale" format="float"/>
+    <attr name="heightScale" format="float"/>
+    <attr name="maxWidthScale" format="float"/>
+    <attr name="marginLeftScale" format="float"/>
+    <attr name="marginTopScale" format="float"/>
+    <attr name="marginRightScale" format="float"/>
+    <attr name="marginBottomScale" format="float"/>
+    <attr name="baseTextSize" format="float"/>
+    <attr name="isStatBlock" format="boolean"/>
+    <attr name="hasPrefixedText" format="boolean"/>
+    <attr name="adjustable" format="boolean"/>
+    <attr name="dynamicText" format="string"/>
+    <attr name="dynamicContentDescription" format="string"/>
+  </declare-styleable>
+</resources>

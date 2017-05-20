@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:columnCount="1"
+  android:background="@android:color/black" >
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/attacks_attack_special_properties_label"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/attacks_attack_special_properties_label"
+      android:contentDescription="@string/content_description_ability_score_label"
+      android:textColor="@android:color/white"
+      android:paddingLeft="2dp"
+      app:baseTextSize="12" />
+  <apps.dysfunctional.com.ScaledTextView
+      android:id="@+id/attacks_attack_special_properties"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:contentDescription="@string/content_description_ability_modifier_label"
+      android:background="#FAFAFA"
+      android:padding="2dp"
+      app:baseTextSize="12"
+      app:marginBottomScale="0.0025"/>
+</GridLayout>

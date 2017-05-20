@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/skill_use_untrained"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/skills_use_untrained"
+        android:gravity="center"
+        android:layout_weight="0.25"
+        app:dynamicContentDescription="@string/content_description_skills_use_untrained" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/skill_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/skills_name"
+        android:gravity="center_vertical"
+        android:layout_weight="4.5"
+        app:dynamicContentDescription="@string/content_description_skills_name" />
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/skill_ability"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/skills_ability"
+        android:gravity="center"
+        android:layout_weight="1.25"
+        app:dynamicContentDescription="@string/content_description_skills_ability" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.75"
+        android:gravity="center">
+        <apps.dysfunctional.com.ScaledImageButton
+            android:id="@+id/skill_roll"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/die"
+            app:widthScale="0.05"
+            app:heightScale="0.05"
+            app:dynamicContentDescription="@string/content_description_skills_roll" />
+    </LinearLayout>
+    <apps.dysfunctional.com.ScaledTextView
+        android:id="@+id/skill_skill_modifier"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/skills_skill_modifier"
+        android:gravity="center"
+        android:layout_weight="1.25"
+        app:dynamicContentDescription="@string/content_description_skills_skill_modifier"
+        app:isStatBlock="true" />
+</LinearLayout>

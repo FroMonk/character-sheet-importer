@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <!--<apps.dysfunctional.com.ScaledTextView
+    android:id="@+id/attacks_melee_definitions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/attacks_melee_definitions"
+    android:textColor="#33b5e5"
+    android:padding="2dp"
+    android:background="@android:color/black"
+    android:gravity="right"
+    app:baseTextSize="12"/>-->
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:id="@+id/attacks_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" />
+  </ScrollView>
+</LinearLayout>

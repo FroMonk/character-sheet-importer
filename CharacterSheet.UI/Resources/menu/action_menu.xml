@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:myapp="http://schemas.android.com/apk/res-auto">
+  <item android:id="@+id/action_email"
+       android:icon="@drawable/ic_email_white"
+       android:title="Email"
+       android:visible="false"
+       myapp:showAsAction="always" />
+  <item android:id="@+id/action_delete"
+       android:icon="@drawable/ic_delete_forever"
+       android:title="Delete"
+       android:visible="false"
+       myapp:showAsAction="always" />
+  <item android:id="@+id/action_reset_spells"
+       android:icon="@drawable/ic_action_refresh"
+       android:title="Reset spells"
+       android:visible="false"
+       myapp:showAsAction="always" />
+  <item android:id="@+id/action_add_item"
+        android:icon="@drawable/ic_add_white"
+        android:title="Add item"
+        android:visible="false"
+        myapp:showAsAction="always" />
+  <item android:id="@+id/action_add_note"
+        android:icon="@drawable/ic_create_white"
+        android:title="Add note"
+        android:visible="false"
+        myapp:showAsAction="always" />
+  <item android:id="@+id/action_tabs"
+       android:icon="@drawable/ic_folder_shared_white"
+       android:title="Tabs"
+       android:visible="false"
+       myapp:showAsAction="always" />
+</menu>
